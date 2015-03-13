@@ -20,7 +20,7 @@ public class HelloServlet/*클래스 이름*/ extends/*오른쪽 클래스를 �
      * @see HttpServlet#HttpServlet()
      */
     public HelloServlet()/* 생성자*/ {
-        super(); /*부모생성자 호출*/
+        super(); /*부모생성자 호출ggg*/
         // TODO Auto-generated constructor stub
     }
 
