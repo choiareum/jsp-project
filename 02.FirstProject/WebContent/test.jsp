@@ -9,7 +9,7 @@
 <body>
 <font color="red">
 <%
-	out.print("hello");
+	out.print("hello");    /* response한거 */
 
 %>
 </font> <!-- html 언어로 -->
