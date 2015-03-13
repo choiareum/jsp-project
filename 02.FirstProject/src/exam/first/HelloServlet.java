@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("*.first") /* @Override같은 annotation*/
+@WebServlet("*.first") /* @Override같은  annotation*/
 public class HelloServlet/*클래스 이름*/ extends/*오른쪽 클래스를 상속*/ HttpServlet {
 	private static final long serialVersionUID = 1L;
        
