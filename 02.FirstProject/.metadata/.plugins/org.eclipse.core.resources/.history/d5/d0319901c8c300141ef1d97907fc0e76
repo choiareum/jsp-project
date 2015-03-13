@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>동양미래대학교</title>
+</head>
+<body>
+안녕하세요.<br><br>
+반갑습니다.<br>
+
+<!--  이미지태그 -->
+<img src="logo.gif"><br>
+<a href="test2.html">테스트2</a>
+<br>
+<a href="http://www.naver.com">네이버로 이동</a>
+</body>
+<br>
+<a href="http://www.naver.com"><img src="logo.gif"></a><br>
+
+<font color="orange" size="7" face="궁서체"><b>최</b><i>아</i>름</font>
+<br>
+<table border="3" width="1000" height="500" align="right">
+	<tr>
+	<td align="center">1</td>
+	<td align="center"><img src="logo.gif"></td>
+	<td align="center">1</td>
+	</tr>
+	<tr>
+	<td align="center">1</td>
+	<td align="center">1</td>
+	<td align="center">1</td>
+	</tr>
+</table>
+
+
+
+</html>
