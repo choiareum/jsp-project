@@ -31,7 +31,7 @@ public class HelloServlet/*클래스 이름*/ extends/*오른쪽 클래스를 �
 		// TODO Auto-generated method stub
 		
 		request.setCharacterEncoding("UTF-8"); //이건 입력값이 한글 안깨지게
-		response.setContentType("text/html; charset=UTF-8");
+		response.setContentType("text/html; charset=UTF-8"); //응답을 html방식으로  "text(대분류)/html(소분류) MIME타입
 		
 		PrintWriter out = response.getWriter();/*get으로 시작되는것은 리턴함수가 있다. set은 매개변수가 있다.*/
 		
