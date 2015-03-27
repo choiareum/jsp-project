@@ -35,11 +35,27 @@ public class TestServlet extends HttpServlet {
 		String a = request.getParameter("nameabc"); 
 		String b = request.getParameter("password");
 		String c = request.getParameter("gender");
+		String d = request.getParameter("mycolor");
+		String e = request.getParameter("myEmail");
+		
+		String[] hobby = request.getParameterValues("hobby"); //여러개를 선택하기 때문에
 		PrintWriter out = response.getWriter(); //클라이언트쪽에 출력
-		out.print(a+"<br>");
-		out.print(b+"<br");
-		out.print(c);
-}
+		out.print("이름 :"+a+"<br>");
+		out.print("비밀번호 :"+b+"<br>");
+		out.print("성별 : "+c+"<br>");
+		out.print("<font color='"+ d +"'>" +d + "</font><br>");
+		out.print("내 이메일 : "+e);
+		
+		if(hobby == null)
+			out.print("<br> 취미를 선택하세요");
+	
+		else {
+			out.print(hobby.length + "개 선택!");//개수를 찍는다
+	
+			for(int i=0; i<hobby.length; i++)
+				out.print(hobby[i]+"<br>");
+			}
+		}
 	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
