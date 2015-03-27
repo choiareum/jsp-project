@@ -24,6 +24,18 @@
 	
 	<input type="color" name="mycolor"><br>
 	<input type="email" name="myEmail">
+	
+	<select name="subject">
+		<option value="java">Java</option>
+		<option value="jsp">JSP </option>
+		<option value="html">HTML</option>	
+	</select> <br>
+	
+	
+	<textarea rows="20" cols="30" name="text">
+	</textarea> <!-- 행 / 칸글쓰기 공간 -->
+	
+	
 	<input type="submit" value="서버로 제출">
 	
 </form>

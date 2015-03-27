@@ -32,11 +32,13 @@ public class TestServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8"); //이건 입력값이 한글 안깨지게
 		response.setContentType("text/html; charset=UTF-8"); //br태그와 출력 한글	
 		
-		String a = request.getParameter("nameabc"); 
+		String a = request.getParameter("nameabc"); //값이 하나가 나오는 것들
 		String b = request.getParameter("password");
 		String c = request.getParameter("gender");
 		String d = request.getParameter("mycolor");
 		String e = request.getParameter("myEmail");
+		String f = request.getParameter("subject");
+		String g = request.getParameter("text");
 		
 		String[] hobby = request.getParameterValues("hobby"); //여러개를 선택하기 때문에
 		PrintWriter out = response.getWriter(); //클라이언트쪽에 출력
@@ -45,6 +47,8 @@ public class TestServlet extends HttpServlet {
 		out.print("성별 : "+c+"<br>");
 		out.print("<font color='"+ d +"'>" +d + "</font><br>");
 		out.print("내 이메일 : "+e);
+		out.print("<br>"+f);
+		out.print("<br>"+g);
 		
 		if(hobby == null)
 			out.print("<br> 취미를 선택하세요");
