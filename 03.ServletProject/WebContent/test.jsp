@@ -5,6 +5,18 @@
 <html>
 <head>
 	<title>JSP/Servlet Example</title>
+	<style>
+		input, select,textarea{
+			border: gold 1pt solid;
+			color:red;
+			font-size:100px;
+			}
+			
+			
+	</style>
+
+<!-- border 색상, 두께, 선  dashed 점선-->
+
 </head>
 
 <body>
