@@ -8,8 +8,9 @@
 	<style>
 		input, select,textarea{
 			border: gold 1pt solid;
-			color:red;
+			color:white;
 			font-size:100px;
+			background-color:black;
 			}
 			
 			
