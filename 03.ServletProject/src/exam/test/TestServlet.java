@@ -59,7 +59,9 @@ public class TestServlet extends HttpServlet {
 			for(int i=0; i<hobby.length; i++)
 				out.print(hobby[i]+"<br>");
 			}
-		}
+	
+			out.close(); //출력 스트림 닫기
+	}
 	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
