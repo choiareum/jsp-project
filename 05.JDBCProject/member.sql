@@ -17,7 +17,7 @@ create table member
 )
 
 select * from member
-where id='test'
+where id='test1'
 
 
 select id from member
