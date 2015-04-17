@@ -4,6 +4,7 @@
 <%
 
 	String id = request.getParameter("id");
+	String pwd = request.getParameter("pwd");
 	out.print(id);
 	//1. JDBC 드라이버 로드
 	Class.forName("oracle.jdbc.driver.OracleDriver"); //oracle.jdbc.driver 패키지이름
@@ -13,7 +14,7 @@
 	// con=connection객체
 	
 	//3. SQL문 실행
-	String sql = "insert into member values('"+id+"', '1234', '홍길동', 20, '1', '서울시', sysdate)";
+	String sql = "insert into member values('"+id+"', '"+pwd+"', '홍길동', 20, '1', '서울시', sysdate)";
 	Statement stmt = con.createStatement();
 	stmt.executeUpdate(sql);
 	
