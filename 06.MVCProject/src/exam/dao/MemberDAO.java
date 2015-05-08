@@ -1,8 +1,11 @@
 package exam.dao;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
+import exam.dto.Member;
 
 public class MemberDAO {
 
@@ -33,9 +36,11 @@ public class MemberDAO {
 	
 	//회원가입
 	
-	public void insertMember(){
+	public void insertMember(Member member){
 		
 		System.out.println("회원가입");
+		String sql = "insert into member values(?,?,?,?,?,?,default)";
+		
 		
 	}
 	
