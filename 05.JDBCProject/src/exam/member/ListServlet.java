@@ -34,6 +34,7 @@ public class ListServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		//1. JDBC 드라이버 로드
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -64,10 +65,14 @@ public class ListServlet extends HttpServlet {
 			ResultSet rs = pstmt.executeQuery();
 			
 			out.print("<table border=1>");
+			out.print("<tr>");
+			out.print("<th>아이디</th><th>이름</th><th>주소</th><th>성별</th><th>나이</th>");
+			out.print("</tr>");
+		
 			while(rs.next()){
 				
 				out.print("<tr>");
-				out.print("<td>"+ rs.getString("id") + "</td>");		
+				out.print("<td><a href='view?id=" + rs.getString("id") + "'>"+ rs.getString("id") + "</a></td>");		
 				out.print("<td>"+ rs.getString("name") + "</td>");		
 				out.print("<td>" + rs.getString("addr") + "</td>");
 				out.print("<td>" + rs.getString("gender") + "</td>");
@@ -77,7 +82,7 @@ public class ListServlet extends HttpServlet {
 				
 				
 		
-				out.print("<br>");
+				//out.print("<br>");
 								
 			}
 			out.print("</table>");

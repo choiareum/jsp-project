@@ -44,7 +44,11 @@
 	pstmt.setString(6, addr);
 	
 	int result = pstmt.executeUpdate();
-	out.print(result); 
+	
+	if(result == 1)
+		response.sendRedirect("list");
+	
+	//out.print(result); 
 	
 	//4. 데이터베이스와 연결 끊음
 	
